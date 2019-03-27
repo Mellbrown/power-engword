@@ -31,7 +31,7 @@ export default {
     return {
       menus: [
         { icon: 'file-medical', title: '새 영단어 추가', name: 'home' },
-        { title: '안녕', name: 'home' },
+        { icon: 'list-ol', title: '영어 단어장들', name: 'wordlists' },
         { title: '안녕', name: 'home' },
         { title: '안녕', name: 'home' },
         { title: '안녕', name: 'home' },

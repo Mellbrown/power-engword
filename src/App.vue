@@ -15,6 +15,13 @@
 <script>
 import { mapState } from 'vuex'
 export default {
+  mounted () {
+    // window.addEventListener('keyup', e => {
+    //   switch (e.key) {
+    //     case 'Backspace': this.$router.go(-1); break
+    //   }
+    // })
+  },
   computed: {
     ...mapState([
       'action_title'

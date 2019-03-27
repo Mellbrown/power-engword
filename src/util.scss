@@ -17,8 +17,8 @@ html, body, #app {
   flex-grow: 1;
   flex-basis: 0;
 }
-.h-left { flex-direction: row; }
-.h-right { flex-direction: row-reverse; }
+.h-left { flex-direction: row; align-items: baseline; }
+.h-right { flex-direction: row-reverse; align-items: baseline; }
 .v-stack { flex-direction: column-reverse; }
 .point { cursor: pointer; }
 .h-resize { cursor: e-resize;}
@@ -64,4 +64,12 @@ html, body, #app {
 
 .y-scroll {
   overflow-y: scroll;
+}
+
+.oneline {
+  white-space: nowrap;
+}
+
+.bg-modal {
+  background: #252424c4;
 }

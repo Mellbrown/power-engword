@@ -14,6 +14,16 @@ export default new Router({
       path: '/main',
       name: 'main',
       component: () => import('@/pages/main')
+    },
+    {
+      path: '/wordlists',
+      name: 'wordlists',
+      component: () => import('@/pages/wordlists')
+    },
+    {
+      path: '/newwords',
+      name: 'newwords',
+      component: () => import('@/pages/newwords')
     }
   ]
 })

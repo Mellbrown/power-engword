@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    action_title: ''
+    action_title: '',
+    user: 'user'
   },
   mutations: {
     setActionTitle (state, title) {
