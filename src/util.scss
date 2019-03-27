@@ -73,3 +73,11 @@ html, body, #app {
 .bg-modal {
   background: #252424c4;
 }
+
+.btn-float {
+  display: inline-block;
+  position: absolute;
+  bottom: 26pt;
+  right: 26pt;
+  filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.5));
+}

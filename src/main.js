@@ -11,6 +11,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
+import windowEvent from '@/comp/small/windowEvent'
+
 import '@/util.scss'
 
 var config = {
@@ -20,13 +22,16 @@ var config = {
   projectId: 'power-engword',
   storageBucket: 'power-engword.appspot.com',
   messagingSenderId: '207025311379'
-};
-firebase.initializeApp(config);
+}
+
+firebase.initializeApp(config)
 
 library.add(fas)
 Vue.component('icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
+
+Vue.component('window-event', windowEvent)
 
 new Vue({
   router,

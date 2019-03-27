@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark flex h-left">
-      <router-link class="navbar-brand" :to="{name: 'home'}">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <router-link class="navbar-brand" to="/">
         <icon icon="file-word"/>
       </router-link>
-      <div class="navbar-text">{{action_title}}</div>
+      <ul class="navbar-nav">
+        <navlink name="내 단어장" link="/wordlists"/>
+      </ul>
     </nav>
     <div class="flex grow relative bg-warning">
       <router-view />
@@ -13,19 +15,13 @@
 </template>
 
 <script>
-import { mapState } from 'vuex'
+
 export default {
   mounted () {
-    // window.addEventListener('keyup', e => {
-    //   switch (e.key) {
-    //     case 'Backspace': this.$router.go(-1); break
-    //   }
-    // })
+
   },
-  computed: {
-    ...mapState([
-      'action_title'
-    ])
+  components: {
+    navlink: () => import('@/comp/small/link')
   }
 }
 </script>
