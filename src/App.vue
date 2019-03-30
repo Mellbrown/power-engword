@@ -5,7 +5,7 @@
         <icon icon="file-word"/>
       </router-link>
       <ul class="navbar-nav">
-        <navlink name="내 단어장" link="/wordlists"/>
+        <navlink name="단어" link="/wordlists"/>
       </ul>
     </nav>
     <div class="flex grow relative bg-warning">

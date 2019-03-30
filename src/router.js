@@ -7,7 +7,7 @@ export default new Router({
   routes: [
     {
       path: '/wordlists',
-      component: () => import('@/pages/wordlists.vue')
+      component: () => import('@/pages/wordlist')
     }
   ]
 })

@@ -12,6 +12,10 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import windowEvent from '@/comp/small/windowEvent'
+import userRef from '@/comp/small/userRef'
+import cvtInput from '@/comp/base/cvtInput'
+import modal from '@/comp/base/modal'
+import editlist from '@/comp/base/editlist'
 
 import '@/util.scss'
 
@@ -28,10 +32,13 @@ firebase.initializeApp(config)
 
 library.add(fas)
 Vue.component('icon', FontAwesomeIcon)
+Vue.component('window-event', windowEvent)
+Vue.component('user-ref', userRef)
+Vue.component('modal', modal)
+Vue.component('cvt-input', cvtInput)
+Vue.component('editlist', editlist)
 
 Vue.config.productionTip = false
-
-Vue.component('window-event', windowEvent)
 
 new Vue({
   router,
